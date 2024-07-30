@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     # local
-    "api",
+    "api.apps.ApiConfig",
     # 3rd party
     "rest_framework",
     "corsheaders",
@@ -145,3 +145,6 @@ REST_FRAMEWORK = {
         "rest_framework_simplejwt.authentication.JWTAuthentication",
     ),
 }
+
+# User model
+AUTH_USER_MODEL = "api.CustomUser"

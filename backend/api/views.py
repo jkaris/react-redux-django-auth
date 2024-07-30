@@ -7,5 +7,6 @@ class UserCreate(generics.CreateAPIView):
     """
     Create new user
     """
+
     queryset = CustomUser.objects.all()
     serializer_class = UserSerializer
